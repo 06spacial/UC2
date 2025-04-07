@@ -1,0 +1,10 @@
+.card{
+    img{
+        width: 354px;
+        height: 354px;
+    }
+}
+body{background-color: burlywood;}
+.hero{
+    background-color: azure;
+}
