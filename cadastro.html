@@ -1,114 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro - Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</head>
-<body class="bg-light" >
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cadastro.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body class="bg-light">
     <nav class="navbar navbar-expanded-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Loja </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" >
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link " href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link " href="#">Produto</a></li>
-                    <li class="nav-item"><a class="nav-link " href="#">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link " href="#">Login</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="cadastro.html">Cadastro</a></li>
-
-                </ul>
-            </div>
-           
+      <div class="container">
+        <a class="navbar-brand" href="#">Site Ferrolândia </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtosaula1404.html">Produto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Cadastro</a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
     <div class="container-fluid py-5">
-        <div class="container bg-white w-50 p-5 rounded shadow">
-        <h2 class="mb-4 text-center"> Cadastro de cliente </h2>
+      <div class="container bg-white w-50 p-5 rounded shadow">
 
-        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+       
+       <!--Fazer o cadastro básico do cliente-->
+        <h2 class="mb-4 text-center">Cadastro de cliente</h2>
+
+        <form
+          action="#"
+          method="post"
+          enctype="application/x-www-form-urlencoded"
+          
+        >  <!--Mecânismo para solicitar o nome da pessoa--> 
+        
+        <div class="mb-3">
+
+            <label for="nome" class="form-label">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="form-control"
+              required
+              placeholder="Digite seu nome"
+            />
+          </div>
+
+          <!--Mecânismo para solicitar o email da pessoa-->
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+              placeholder="Digite seu email"
+            />
+          </div>
+
+          <!--Mecânismo para solicitar uma senha a pessoa-->
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Senha:</label>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              class="form-control"
+              required
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <!--Solicite que a pessoa informe um número para contato de celular e fixo-->
+          <div class="mb-3">
+            <label for="celular" class="form-label">celular</label>
+            <input
+               type="text"
+               id="celular"
+               name="celular"
+               class="form-control"
+               requinred placeholder="Digite o seu celular"
+               />
+          </div>
+
+          <!--Solicite que a pessoa informe um telefone fixo para contato-->
+          <div class="mb-3">
+            <label for="telefone fixo" class="form-label">telefone fixo</label>
+            <input
+              type="text"
+              id="telefone fixo"
+              name="telefone fixo"
+              class="form-control"
+              required placeholder="Digite seu telefone fixo 1"
+              />
+          </div>
+          <div class="mb-3">
+            <label for="telefone fixo" class="form-label">telefone fixo</label>
+            <input
+              type="text"
+              id="telefone fixo"
+              name="telefone fixo"
+              class="form-control"
+              required placeholder="Digite seu telefone fixo 2"
+              />
+          </div>
+          
+
+          <!--Função-->
+
+          <div class="mb-3">
+            <label for="role" class="form-label">Função:</label>
+            <input
+              type="text"
+              id="role"
+              value="ROLE_USER"
+              disabled
+              name="role"
+              class="form-control"
+              required
+              placeholder="Digite sua função"
+            />
+          </div>
+          <!--Mecânismo para solicitar o gênero da pessoa-->
+          <div class="mb-3">
+            <label for="genero" class="form-label">Genero</label><br />
+            <div class="form-check form-check-inline">
+              <input type="radio" name="genero" id="masc" value="masculino" />
+              <label for="masc" form-check-label>Masculino</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" name="genero" id="fem" value="feminino" />
+              <label for="fem" form-check-label>Feminino</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" name="genero" id="outro" value="outro" />
+              <label for="outro" form-check-label>Outros</label>
+            </div>
+
+            <!---Mecânismo para solicitar que a pessoa informe o Estado em que ela mora -->
+            <div class="mb-3">
+              <label for="estado" class="form-label"> Estado: </label>
+              <select name="estado" id="estado" class="form-select">
+                <option selected disabled>Selecione seu estado</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="es">Espiito Santos</option>
+                <option value="to">Tocantins</option>
+                <option value="se">Sergipe</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ma">Maranhão</option>
+                <option value="go">Goiás</option>
+                <option value="df">Distrito Federal</option>
+                <option value="ce">Ceara</option>
+                <option value="ba">Bahia</option>
+                <option value="am">Amazonas</option>
+                <option value="ap">Amapá</option>
+                <option value="al">Alagoas</option>
+                <option value="ac">Acre</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+
+              </select>
+            </div>
+
+            <!--Preferêcia-->
 
             <div class="mb-3">
-                <label for="username" class="form-label">Username:</label>
-                <input type="text" id="username" name="username" required class="form-control" placeholder="Digite seu username">
-            </div>
-            
-            <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="text" id="email" name="email" class="form-control" required placeholder="Digite seu email">
+              <label class="form-label">Preferências:</label><br />
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="ofertas"
+                  name="preferencias[]"
+                  value="ofertas"
+                />
+                <label for="ofertas" class="form-check-label"
+                  >Receber ofertas por e-mail</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="novidades"
+                  name="preferencias[]"
+                  value="novidades"
+                />
+                <label for="novidades" class="form-check-label"
+                  >Receber novidades da loja</label
+                >
+              </div>
+
+              <!--Mecânismo para solicitar que a pessoa informe a sua cor preferida-->
             </div>
 
             <div class="mb-3">
-                <label for="password" class="form-label">Senha:</label>
-                <input type="text" id="password" name="password" class="form-control" required placeholder="Digite sua senha">
+                <label for="cor" class="form-label">Cor favorita</label>
+                <input type="color" id="cor" class="form-control form-control-color">
             </div>
-            
+
+            <!--Mecânismo para solicitar que a pessoa anexe uma foto sua -->
             <div class="mb-3">
-                <label for="role" class="form-label">Função:</label>
-                <input type="text" id="role" value="ROLE_USER" disabled name="role" class="form-control" required placeholder="Digite sua função">
+                <label for="foto" class="form-label">Foto de perfil:</label>
+                <input type="file" id="foto" name="foto" class="form-control">
             </div>
 
-            <div class="d-flex justify-content-between">
-                <button type="reset" class="btn btn-secondary">Limpar</button>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <!--Solicite que a pessoa informe um pouco sobre si mesma-->
 
+            <div class="mb-3">
+                <label for="descricao" class="form-label">Sobre você:</label>
+                <textarea name="descricao" class="form-control" id="descricao" placeholder="Fale um pouco sobre você" rows="3"></textarea>
             </div>
+
+             <a href="tel:+5521999990000">Entre em contato: (21) 99999-0000</a> 
+             <a href="ferrolandia@gmail.com">Envie um email: ferrolandia@gmail.com</a>
+
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
         </form>
-         </div>
+      </div>
     </div>
     <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0"> 2025 Store. Todos os direitos reservados</p>
-        </footer>
+      <p class="mb-0">2025 Store. Todos os direitos reservados</p>
+      <h1>Um pouco da nossa história</h1>
+      <p>
+          Fundada em 1994 a Ferrolândia, tornou-se referência em distribuição e produção de aço. Inicialmente, tendo sua primeira loja no Estado do Rio de Janeiro, no Bairro de Madureira. E, posteriormente, expandiu-se para outros estados, atendendo atualmente todo o Brasil. A satisfação do cliente e entrega de boa mercado é e sempre será  anossa priporidade.
+      </p>
+
+
+    </footer>
     <script>
-       async function enviarCadastro(event){
-            event.preventDefault();
+      async function enviarCadastro(event) {
+        event.preventDefault();
 
-            const dados = {
+        const dados = {
+          username: document.getElementById("username").value,
+          email: document.getElementById("email").value,
+          password: document.getElementById("password").value,
+          role: document.getElementById("role").value,
+        };
 
-                username: document.getElementById("username").value,
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value,
-                role: document.getElementById("role").value,
+        try {
+          const response = await fetch("http://localhost:8080/auth/register", {
+            method: "POST",
 
-            };
-            
-            try {
-            const response = await fetch("http://localhost:808/auth/register", {
-                method:"POST",
+            headers: {
+              "Content-type": "application/json",
+            },
 
-                headers: {
-                    "Content-type":"application/json"
-                },
+            body: JSON.stringify(dados),
+          });
 
-                body: JSON.stringify(dados)
-
-             });
-
-             if(response.ok){
-                const resultado = await response.json();
-                alert("Cadastro enviado com sucesso!");
-                console.log("Resposta da api", resultado);
-             }else{
-                alert("Erro ao enviar cadastro", response);
-
-             }
-            }catch(error){
-                alert("Erro desconhecido!");
-            }
-
+          if (response.ok) {
+            const resultado = await response.json();
+            alert("Cadastro enviado com sucesso!");
+            console.log("Resposta da api", resultado);
+          } else {
+            alert("Erro ao enviar cadastro", response);
+          }
+        } catch (error) {
+          alert("Erro desconhecido!");
         }
+      }
 
-        document.querySelector("form").addEventListener("submit", enviarCadastro);
+      document.querySelector("form").addEventListener("submit", enviarCadastro);
+
+
+     
     </script>
-    
-</body>
+
+
+  </body>
 </html>
+
+
+
 
 
 

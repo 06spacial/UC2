@@ -1,0 +1,21 @@
+.card  {
+    img{
+       height: 300px;
+       object-fit: cover;
+    }
+}
+
+.hero{
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: cornsilk;
+    
+
+
+} 
+
